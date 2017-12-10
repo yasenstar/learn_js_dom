@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Image Gallery</title>
+	<style type="text/css">	</style>
+</head>
+<body>
+	<h1>Backgrounds from Ubuntu 17.10</h1>
+	<ul>
+		<li>
+			<a href="pics/Aardvark_Wallpaper_Grey_4096x2304.png" title="Aardvark_Wallpaper_Grey">Aardvark Wallpaper Grey</a>
+		</li>
+		<li>
+			<a href="pics/Bee_on_lavendar_by_Martin.jpg" title="Bee_on_lavendar_by_Martin">Bee on Lavendar</a>
+		</li>
+		<li>
+			<a href="pics/Bloom_by_Victor_Madru.jpg" title="Bloom_by_Victor_Madru">Bloom</a>
+		</li>
+		<li>
+			<a href="pics/Grand_Canyon_North_Rim_by_Rihards_Vilks.jpg" title="Grand_Canyon_North_Rim_by_Rihards_Vilks">Grand Canyon North Rim</a>
+		</li>
+		<li>
+			<a href="pics/Green_Island_by_Radu_Galan.jpg" title="Green_Island_by_Radu_Galan">Green Island</a>
+		<li>
+			<a href="pics/Headstock_by_Bernhard_Hanakam.jpg" title="Headstock_by_Bernhard_Hanakam">Headstock</a>
+		</li>
+		<li>
+			<a href="pics/Lighthouse_at_sunrise_by_Frenchie_Smalls.jpg" title="Lighthouse_at_sunrise_by_Frenchie_Smalls">Lighthouse at Sunrise</a>
+		</li>
+		<li>
+			<a href="pics/Lily_of_the_Valley_by_Robert_Slotte.jpg" title="Lily_of_the_Valley_by_Robert_Slotte">Lily of the Valley</a>
+		</li>
+		<li>
+			<a href="pics/London_Eye_by_Paul_Daniell.jpg" title="London_Eye_by_Paul_Daniell">London Eye</a>
+		</li>
+		<li>
+			<a href="pics/More_Kamikochi_by_mendhak.jpg" title="More_Kamikochi_by_mendhak">More Kamikochi</a>
+		</li>
+		<li>
+			<a href="pics/Planking_is_going_against_the_grain_by_mendhak.jpg" title="Planking_is_going_against_the_grain_by_mendhak">Planking is Going Against the Grain</a>
+		</li>
+		<li>
+			<a href="pics/Red_delight_by_Rishikesh_Gawade.jpg" title="Red_delight_by_Rishikesh_Gawade">Red Delight</a>
+		</li>
+		<li>
+			<a href="pics/Sunrise_on_the_beach_by_Luca_Ciavatta.jpg" title="Sunrise_on_the_beach_by_Luca_Ciavatta">Sunrise on the Beach</a>
+		</li>
+		<li>
+			<a href="pics/ubuntu-default-greyscale-wallpaper.png" title="ubuntu-default-greyscale-wallpaper">Ubuntu Default Greyscale</a>
+		</li>
+		<li>
+			<a href="pics/Voss_by_fortuneblues.jpg" title="Voss_by_fortuneblues">Voss</a>
+		</li>
+		<li>
+			<a href="pics/warty-final-ubuntu.png" title="warty-final-ubuntu">Warty Final Ubuntu</a>
+		</li>
+	</ul>
+	<script>
+//		alert(typeof document.getElementById("purchase"));
+
+/*		alert(document.getElementsByTagName("li").length);
+		for (var i=0; i < document.getElementsByTagName("li").length; i++) {
+			alert(typeof document.getElementsByTagName("li")[i]);
+		}	*/
+
+//		alert(document.getElementsByClassName("important sale").length);
+
+/*		var shopping = document.getElementById("purchase");
+		var sales = shopping.getElementsByClassName("sale");
+		alert(sales.length);
+*/
+
+/*		var paras = document.getElementsByTagName("p");
+		for (var i=0; i < paras.length; i++) {
+			alert(paras[i].getAttribute("title"));
+		}
+		*/
+
+/*		var paras = document.getElementsByTagName("p");
+		for (var i=0; i < paras.length; i++) {
+			var title_text = paras[i].getAttribute("title");
+			if (title_text != null) {
+				alert(title_text);
+			}
+		}
+		*/
+
+/*		var paras = document.getElementsByTagName("p");
+		for (var i=0; i < paras.length; i++) {
+			var title_text = paras[i].getAttribute("title");
+			if (title_text) alert(title_text);
+		}
+		*/
+
+/*		var shopping = document.getElementById("purchase");
+		alert(shopping.getAttribute("title"));
+		shopping.setAttribute("title", "a list of goods");
+		alert(shopping.getAttribute("title"));
+		*/
+
+		var paras = document.getElementsByTagName("p");
+		for (var i=0; i < paras.length; i++) {
+			var title_text = paras[i].getAttribute("title");
+			if (title_text) {
+				alert(paras[i].getAttribute("title"));
+				paras[i].setAttribute("title", "brand new title text");
+				alert(paras[i].getAttribute("title"));
+			}
+		}
+
+	</script>
+</body>
+</html>
